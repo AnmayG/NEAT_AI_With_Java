@@ -1,5 +1,5 @@
-# NEAT_AI_With_Java
-This is a project created for my Computer Science A class using Java to implement a NEAT algorithm and shoot down targets.
+# NEAT AI With Java
+This is a final project created for my Computer Science A class using Java to implement a NEAT algorithm and shoot down targets.
 
 This uses the FXGL package to create a simple game in Java that involves shooting down targets.
 
