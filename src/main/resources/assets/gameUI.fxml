@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backgroundCanvas" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameUIController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="215.0" style="-fx-background-color: #00000077;">
+         <children>
+            <Slider fx:id="slider1" blockIncrement="0.1" layoutX="9.0" layoutY="14.0" majorTickUnit="0.5" max="1.0" min="-1.0" minorTickCount="1" prefHeight="75.0" prefWidth="197.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="-fx-background-color: #ffffff;">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Slider>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="248.0" layoutX="8.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Canvas fx:id="canvas1" height="248.0" layoutX="8.0" layoutY="107.0" width="200.0" />
+            <LineChart fx:id="chart1" layoutX="8.0" layoutY="377.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+               <xAxis>
+                  <NumberAxis side="BOTTOM" fx:id="xAxis" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="yAxis" side="LEFT" />
+               </yAxis>
+            </LineChart>
+         </children>
+      </Pane>
+      <Pane layoutX="785.0" prefHeight="600.0" prefWidth="215.0" style="-fx-background-color: #00000077;">
+         <children>
+            <ListView fx:id="list1" layoutX="8.0" layoutY="236.0" prefHeight="350.0" prefWidth="200.0" />
+            <Label fx:id="label1" alignment="TOP_LEFT" layoutX="8.0" layoutY="14.0" prefHeight="215.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="Label" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <Canvas fx:id="backgroundCanvas" height="600.0" visible="false" width="1000.0" />
+   </children>
+</AnchorPane>

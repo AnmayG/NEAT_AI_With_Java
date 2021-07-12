@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuController">
+   <Pane fx:id="aPane" maxWidth="1000.0" prefHeight="600.0" prefWidth="1000.0">
+      <Pane fx:id="menuPane" prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <Pane fx:id="animate2" prefHeight="212.0" prefWidth="722.0" style="-fx-background-color: #00000099;" translateX="263.0" translateY="381.0">
+               <children>
+                  <Button fx:id="startButton1" mnemonicParsing="false" onAction="#b1Click" prefHeight="56.0" prefWidth="244.0" style="-fx-background-color: fefefe;" text="Start as AI" textAlignment="CENTER" translateX="464.0" translateY="14.0" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="startButton3" mnemonicParsing="false" onAction="#b4Click" prefHeight="56.0" prefWidth="244.0" style="-fx-background-color: fefefe;" text="Load Best AI" textAlignment="CENTER" translateX="464.0" translateY="142.0" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="startButton2" mnemonicParsing="false" onAction="#b2Click" prefHeight="56.0" prefWidth="244.0" style="-fx-background-color: fefefe;" text="Start as Player" textAlignment="CENTER" translateX="464.0" translateY="78.0" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="animate1" prefHeight="212.0" prefWidth="722.0" style="-fx-background-color: #00000099;" translateX="263.0" translateY="381.0" visible="false">
+               <children>
+                  <Slider fx:id="slider1" blockIncrement="5.0" majorTickUnit="10.0" minorTickCount="5" prefHeight="56.0" prefWidth="244.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="-fx-background-color: #fefefe;" translateX="464.0" translateY="14.0" value="10.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Slider>
+                  <Slider fx:id="slider2" blockIncrement="5.0" majorTickUnit="10.0" minorTickCount="5" prefHeight="56.0" prefWidth="244.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="-fx-background-color: #fefefe;" translateX="464.0" translateY="79.0" value="50.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Slider>
+                  <Label fx:id="sl1" alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" text="SFX Volume:" textAlignment="RIGHT" translateX="334.0" translateY="14.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sl2" alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="130.0" style="-fx-background-color: #ffffff;" text="Music Volume:" textAlignment="RIGHT" translateX="334.0" translateY="79.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="19.0" layoutY="14.0" prefHeight="579.0" prefWidth="244.0" style="-fx-background-color: #00000099;">
+               <children>
+                  <Label fx:id="l1" alignment="CENTER" layoutX="-2.0" layoutY="-2.0" prefHeight="105.0" prefWidth="244.0" text="NEAT Project" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="l2" alignment="CENTER" layoutY="100.0" prefHeight="30.0" prefWidth="244.0" text="By Anmay Gupta" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="exitButton" layoutY="509.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="244.0" style="-fx-background-color: fefefe;" text="Exit" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="animateButton2" layoutY="381.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="244.0" style="-fx-background-color: fefefe;" text="Start" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="animateButton1" layoutY="445.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="244.0" style="-fx-background-color: fefefe;" text="Audio" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </Pane>
+</AnchorPane>
